@@ -1,0 +1,525 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0718.1543                               -->
+<workbook original-version='18.1' source-build='2019.2.2 (20192.19.0718.1543)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tab1 (blend3)' inline='true' name='federated.121grnv1uq0viq13jmjzb1matk5t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='blend3' name='excel-direct.1a8nbmt1rqzyji1ah08ty0h72kz5'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Dell/Downloads/Imarticus_work/BI/Tableau_2019/blend3.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1a8nbmt1rqzyji1ah08ty0h72kz5' name='tab1' table='[tab1$]' type='table'>
+          <columns gridOrigin='A1:D5:no:A1:D5:0' header='yes' outcome='6'>
+            <column datatype='integer' name='User_ID' ordinal='0' />
+            <column datatype='integer' name='District' ordinal='1' />
+            <column datatype='integer' name='Level' ordinal='2' />
+            <column datatype='string' name='Type' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>User_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[User_ID]</local-name>
+            <parent-name>[tab1]</parent-name>
+            <remote-alias>User_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[District]</local-name>
+            <parent-name>[tab1]</parent-name>
+            <remote-alias>District</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Level]</local-name>
+            <parent-name>[tab1]</parent-name>
+            <remote-alias>Level</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[tab1]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tab1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D5:no:A1:D5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='User ID' datatype='integer' name='[User_ID]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.477223' measure-ordering='alphabetic' measure-percentage='0.522777' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='tab2 (blend4)' inline='true' name='federated.1drbnxo13hor3w1dvo14k006kbz2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='blend4' name='excel-direct.117oqvx08dcljg14yf1ab1tec93g'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Dell/Downloads/Imarticus_work/BI/Tableau_2019/blend4.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.117oqvx08dcljg14yf1ab1tec93g' name='tab2' table='[tab2$]' type='table'>
+          <columns gridOrigin='A1:E4:no:A1:E4:0' header='yes' outcome='6'>
+            <column datatype='string' name='Branch' ordinal='0' />
+            <column datatype='integer' name='User_ID' ordinal='1' />
+            <column datatype='integer' name='District' ordinal='2' />
+            <column datatype='integer' name='Level' ordinal='3' />
+            <column datatype='integer' name='Fine' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Branch</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Branch]</local-name>
+            <parent-name>[tab2]</parent-name>
+            <remote-alias>Branch</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[User_ID]</local-name>
+            <parent-name>[tab2]</parent-name>
+            <remote-alias>User_ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[District]</local-name>
+            <parent-name>[tab2]</parent-name>
+            <remote-alias>District</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Level]</local-name>
+            <parent-name>[tab2]</parent-name>
+            <remote-alias>Level</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fine</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fine]</local-name>
+            <parent-name>[tab2]</parent-name>
+            <remote-alias>Fine</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tab2]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E4:no:A1:E4:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='User ID' datatype='integer' name='[User_ID]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.455531' measure-ordering='alphabetic' measure-percentage='0.544469' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Blending_with_tab1_as_primary'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tab1 (blend3)' name='federated.121grnv1uq0viq13jmjzb1matk5t' />
+            <datasource caption='tab2 (blend4)' name='federated.1drbnxo13hor3w1dvo14k006kbz2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.121grnv1uq0viq13jmjzb1matk5t'>
+            <column datatype='integer' name='[District]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Level]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column caption='User ID' datatype='integer' name='[User_ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[User_ID]' derivation='None' name='[none:User_ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[District]' derivation='Sum' name='[sum:District:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Level]' derivation='Sum' name='[sum:Level:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1drbnxo13hor3w1dvo14k006kbz2'>
+            <column datatype='string' name='[Branch]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Fine]' role='measure' type='quantitative' />
+            <column-instance column='[Branch]' derivation='None' name='[none:Branch:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fine]' derivation='Sum' name='[sum:Fine:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.121grnv1uq0viq13jmjzb1matk5t].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.121grnv1uq0viq13jmjzb1matk5t].[sum:District:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.121grnv1uq0viq13jmjzb1matk5t].[sum:Level:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1drbnxo13hor3w1dvo14k006kbz2].[sum:Fine:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.121grnv1uq0viq13jmjzb1matk5t].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.121grnv1uq0viq13jmjzb1matk5t].[sum:District:qk]&quot;</bucket>
+              <bucket>&quot;[federated.121grnv1uq0viq13jmjzb1matk5t].[sum:Level:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1drbnxo13hor3w1dvo14k006kbz2].[sum:Fine:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.121grnv1uq0viq13jmjzb1matk5t].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.121grnv1uq0viq13jmjzb1matk5t].[sum:District:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.121grnv1uq0viq13jmjzb1matk5t].[sum:Level:qk]' value='N' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.121grnv1uq0viq13jmjzb1matk5t].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.121grnv1uq0viq13jmjzb1matk5t].[none:User_ID:ok] / ([federated.121grnv1uq0viq13jmjzb1matk5t].[none:Type:nk] / [federated.1drbnxo13hor3w1dvo14k006kbz2].[none:Branch:nk]))</rows>
+        <cols>[federated.121grnv1uq0viq13jmjzb1matk5t].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{E90CD21E-11FD-424D-8CBB-C1A4074CF59A}' />
+    </worksheet>
+    <worksheet name='Blending_with_tab2_as_primary'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tab2 (blend4)' name='federated.1drbnxo13hor3w1dvo14k006kbz2' />
+            <datasource caption='tab1 (blend3)' name='federated.121grnv1uq0viq13jmjzb1matk5t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.121grnv1uq0viq13jmjzb1matk5t'>
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1drbnxo13hor3w1dvo14k006kbz2'>
+            <column datatype='string' name='[Branch]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[District]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Fine]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Level]' role='measure' type='quantitative' />
+            <column caption='User ID' datatype='integer' name='[User_ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Branch]' derivation='None' name='[none:Branch:nk]' pivot='key' type='nominal' />
+            <column-instance column='[User_ID]' derivation='None' name='[none:User_ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[District]' derivation='Sum' name='[sum:District:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fine]' derivation='Sum' name='[sum:Fine:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Level]' derivation='Sum' name='[sum:Level:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1drbnxo13hor3w1dvo14k006kbz2].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1drbnxo13hor3w1dvo14k006kbz2].[sum:District:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1drbnxo13hor3w1dvo14k006kbz2].[sum:Level:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1drbnxo13hor3w1dvo14k006kbz2].[sum:Fine:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1drbnxo13hor3w1dvo14k006kbz2].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1drbnxo13hor3w1dvo14k006kbz2].[sum:District:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1drbnxo13hor3w1dvo14k006kbz2].[sum:Level:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1drbnxo13hor3w1dvo14k006kbz2].[sum:Fine:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1drbnxo13hor3w1dvo14k006kbz2].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1drbnxo13hor3w1dvo14k006kbz2].[sum:District:qk]' value='N' />
+            <format attr='text-format' field='[federated.1drbnxo13hor3w1dvo14k006kbz2].[sum:Level:qk]' value='N' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1drbnxo13hor3w1dvo14k006kbz2].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.8790607452392578' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1drbnxo13hor3w1dvo14k006kbz2].[none:User_ID:ok] / ([federated.1drbnxo13hor3w1dvo14k006kbz2].[none:Branch:nk] / [federated.121grnv1uq0viq13jmjzb1matk5t].[none:Type:nk]))</rows>
+        <cols>[federated.1drbnxo13hor3w1dvo14k006kbz2].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{031AE2BC-23EE-4B35-BB80-C00D7AB7C736}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='Blending_with_tab1_as_primary'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.121grnv1uq0viq13jmjzb1matk5t].[none:Type:nk]</field>
+            <field>[federated.121grnv1uq0viq13jmjzb1matk5t].[none:User_ID:ok]</field>
+            <field>[federated.1drbnxo13hor3w1dvo14k006kbz2].[none:Branch:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{AAB8F6B9-D723-4845-B352-9DC57FB288A5}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Blending_with_tab2_as_primary'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.121grnv1uq0viq13jmjzb1matk5t].[none:Type:nk]</field>
+            <field>[federated.1drbnxo13hor3w1dvo14k006kbz2].[none:Branch:nk]</field>
+            <field>[federated.1drbnxo13hor3w1dvo14k006kbz2].[none:User_ID:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{785EC57B-4F15-4672-8191-60182212FC87}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='104' name='Blending_with_tab1_as_primary' width='192'>
+      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
+      tiZXgwpxE/0P6aXtTlbb+soAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='84' name='Blending_with_tab2_as_primary' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAABUCAYAAADUKzhSAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAGb0lEQVR4nO3de1CU1R/H8Xdt4iKURmTQz2tlGt5AUH9kOU41OllTFk0XdQaTasXp6nSZ
+      prKi0Wl++esy2tjWMJPhJUqJxppSu+pojeO6SygKZkE3QQN0SXhifbI/QKOmYtlFHvF8Xn8x
+      z/J858xwPss5Z8959rSjR48eRcRQpzvdABEnKQBiNAVAjKYAiNEUADGaAiBGUwDEaAqAGE0B
+      EKMpAGI0BUCMpgCI0RQAMZoCIEZTAMRoCoAYTQEQoykAYjQFQIymAIjRFAAxmgIgRlMAxGgK
+      gBhNARCjKQBiNAVAjHZGe7+wbdu2rmiHiCNO08NxxWQaAonRFAAxmgIgRosqAEcav2XTsoXM
+      nXY5M5ZVdVabRLpMu6tA/6yKwnnzKc+8i8xhRXzYeW0yzCE+e/Fx1sRM57m5mbjbvGJb+9jx
+      6QY+27Kd+KwXyUl1rJEnKZtgxXoKCtaxc38TdsyZDBp3G3dOTyfRFV6FKAIwkBmvFACw8cnI
+      qxjvkJ+yvjlMP7iFEiuT8ccTUM3Hry6nPnMmnmkhVjjZxpOUVVrAgrfhprnPMifZjSt0mB8C
+      m6msg8Rzw6uhOYDDDvkD9EwZSVoa+EqsNq8kMfneh7hlbDLuMN/NzFLH5nW/MO2RWYxNduMC
+      6BFHv7GTyQiz84MC4DCLsrIYRgxz4U5JoXnHbmynm9Rd2N+y151OWlx0ZRQAJ1l+fL+lMdoN
+      9B7G0BofpUpAeA7spzo29vicKZDvwePx4PHk8UF1+GUUAAdZfh/WiJTWP2ISaWk1+JSA8PTp
+      Q0JTE8cGjak5XrxeL09P+0+HykQxCZboWJT4y9hT8jCeVX9c7XV5OXZqChr2t8M9mAuDq/Ef
+      ziQzimFQ5AGoWsaMrMWUH7+QRcZi4Jrn2fb0xMhbZAqrBF/NFB7zXs+AY9fsMpbP3065nUKK
+      EtCOJCZOjSXvpSL6eKZy8TluXKF69u1v6lAVbYZziB3I54XaG3jwyoQ/Xf/u3YVsHPIIM1NK
+      yfcsZetfbxyXi1cfCLSy+dm3ktdWbaWyoRlizmTQ6Gu5deYkBrvbvxsUADGcJsFiNAVAjKYA
+      iNEUADGaPgc4wXSm+uSmVSA5qTU2Np7Q+hoCidEUADGaAiBGUwDEaFoFclTbvSw2sX2HM3V2
+      DpMHu3UeOCw2DXs/obDwU3YfaMKOiWfAmCyyb0ol4cSfCZZoWaUFPLfuLGY99jyXnH06Vm0F
+      /p8agIM6DxwGq6yQ/xfDdbOf5PaknrhCjfxU+iVV9ZCQGF4NLYM6po6PF62kV+7d/76fPZBP
+      PjnG/gf452XQej5fsppes+9kbK/I62sO4JROOtNqLLuKyp6pjIyi84MCIN1VKETz31yu2bCc
+      DTXhl1EAnOIazIWWD/9hpxvSTbkHMCgYoDTKD4oVAMckMGFKPMUvFbGrPgTYWLW7+KL0gNMN
+      6ybOY8LkWN5fupaKul9bHicTOkjNzzoS2Y20LIO+UvAF3zfRZhl0t45Dtvr3vUA2dYHVLFuz
+      ne9+aYaYeAYMn8KNN1/GQB2JlFOBNsOJnEAKgBhNARCjKQBiNH1NqhhNq0BiNA2BxGgKgBhN
+      ARCjKQBitChOhB2hzr+ChQteZ3NlA6HYfky6I4/52aM4q9Oad2oL5HtYenzDj4vY/mO4efbt
+      XHp+y3k+HYsMU/UH5PvTyLk6qcO3RhGALbz8hJ+RTxWyMKMvfP8Oj2bfj3fEJzyUHnlVs4wj
+      15tDS78OUb+rmMUrNzH8wUn01tekdonIA2ClM694InHHKvQfw6jkIF9W1kL6OZ3TOqP04OxL
+      JjBmUwlNQO/Wr0kFIOBow05pkc8B3HF/dH4g+FUx68uH8t8Mdf5I2FYtu4pWsvuCNDr+j1wi
+      1QlPhWimovBh5i35mvH/e4MZA6OvaI6tLPW0TgLc55F+/R3cfYW6f1eKLgBHvmHNA7ksqr6M
+      BW8t4opkPWWlY9rMAUKH+aFsLUu8+8j1jEdn5btGFMugQTY+k8ui4HRWrHpCnT9aPeLoN/pW
+      rjpjB3ucbkt3c7Ce+ghvjTwAP64l//1E5uRlc4H6fiewsSrX81FVvN79w2AFg4QA26rkvaIS
+      +l8U2dAx8q67t4KdlLMzK4PFbS4PvWcNK7I1EQhPmzkALmL7DmdK9iyGABD4y7ngrS0/G3gu
+      +O80+F4l7809NMckMirrPuYMiayOdoOK0bQVQoz2O/IUIIRn2O5WAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
